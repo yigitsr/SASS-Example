@@ -1,0 +1,111 @@
+$greenColor: rgb(40, 88, 88);
+$primaryColor: #555;
+$buttonHover: #444;
+$textColor: rgb(133, 231, 202);
+$headingColor: rgb(118, 165, 165);
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+nav {
+    background-color: $greenColor;
+    display: flex;
+    justify-content: flex-end;
+
+    ul {
+        list-style: none;
+
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        color: rgb(241, 228, 228);
+        text-decoration: none;
+        display: block;
+        padding: 10px 15px;
+        transition: 0.3s ease all;
+
+        &:hover {
+
+            background: $buttonHover;
+            border-radius: 15px;
+        }
+
+
+    }
+}
+
+
+
+
+header {
+    background-color: $primaryColor;
+    height: 100vh;
+
+    h1 {
+        text-align: center;
+        font-size: 3em;
+        color: $headingColor;
+    }
+
+    p {
+        font-size: 1.5em;
+        text-align: center;
+        color: $textColor;
+
+    }
+
+}
+
+section {
+    height: 100vh;
+    background-color: $primaryColor;
+
+    h1 {
+        text-align: center;
+        font-size: 3em;
+        color: $headingColor;
+    }
+
+    p {
+        font-size: 1.5em;
+        text-align: center;
+        color: $textColor;
+
+    }
+}
+
+
+.contact {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+    background-color: $primaryColor;
+    background-image: url("https://i.picsum.photos/id/12/1900/1000.jpg?hmac=6JFM276vwJc_q-lfIK2OQOvXTeZvV6Y2Xza2CJo7Ou0");
+    background-repeat: no-repeat;
+
+    h2 {
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
